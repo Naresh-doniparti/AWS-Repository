@@ -1,7 +1,7 @@
  # Virtual Private Cloud(VPC)
  - It is an isolated network used for securely hosting your applications. Applications deployed in the VPC cannot be accessible to the external world unless it is configured to do so. 
  - We can customize the level of isolation we want with the help of VPC components like Subnets, ACLs which will be touched upon later.
- - For creating a VPC, you need to provide your CIDR block which tells how many IP addresses you want. For example, if you choose 10.0.0.0/24,  it allocates 256 IP address for our usage, which is derived from the below formula.
+ - For creating a VPC, you need to provide your CIDR block which tells how many IP addresses you want for your VPC. For example, if you choose 10.0.0.0/24,  it allocates 256 IP address for your usage, which is derived from the below formula.
    ```
        2^(32-block size) = No. of IP addresses 
        2^(32-24) = 2 ^ 8 = 256 IP addresses (Out of 256, some 4/5 IP addresses is used by AWS for internal purposes)
