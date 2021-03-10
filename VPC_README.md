@@ -42,7 +42,7 @@
    load balancers, etc.,
  - Subnets can be created across zones in the region where VPC was created.
  
- ##ACL (Access control lists)
+ ## ACL (Access control lists)
 - It sits between routes and subnets and controls what comes in and out of the subnets. 
 - Custom rule names has a naming convention, they start with rule name 100, when we add another rule, it has to be given 200(incremented by 100).
 - In each rule we will specify what traffic is allowed or denied.
