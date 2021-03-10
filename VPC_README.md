@@ -27,7 +27,7 @@
   ### Subnets 
 
    <div align="left">
-      <img src="/VPC.JPG"></img>
+      <img src="/VPC.jpg"></img>
    </div> 
  - The idea of dividing the VPC into subnets is to group them into public and private subnets and route the traffic to them accordingly.
  - Private subnets does not allow public traffic. But, they should access the resources in the internet using NAT gateway. 
