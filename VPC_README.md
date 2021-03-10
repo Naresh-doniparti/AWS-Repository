@@ -33,6 +33,7 @@
  <div align="left">
       <img src="/ROUTETABLE.png"></img>
    </div> 
+
  - Routing to subnets is done with the help of routing tables. In the routing tables, we will be specifying what is the inbound and outbound traffic and what are the subnets associated. You can associate multiple subnets to a routing table. 
    - For public subnets, we will be creating a public route table and add Internet gateway as one of the routes and associate all the public subnets to this route table. Adding internet gateway to the routes makes public subnets accessible to the external world. 
    - For private subnets, we will be creating a private route table and add NAT gateway as one of the routes and associate all the private subnets to this route table.      
