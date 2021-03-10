@@ -47,9 +47,9 @@
  </div>
 
 
-### At a high level, Routing tables and ACL helps what comes in and goes out of the subnet, it essentialy protects your subnets from being accessed by an unknown resources. EC2 instances deployed in the subnets uses security groups as an another layer of protection.
+## Bigger Picture
 
-# Bigger Picture
+#### At a high level, Routing tables and ACL helps what comes in and goes out of the subnet, it essentialy protects your subnets from being accessed by an unknown resources. EC2 instances deployed in the subnets uses security groups as an another layer of protection.
   <div align="left">
       <img src="/VPC1.PNG"></img>
  </div>
