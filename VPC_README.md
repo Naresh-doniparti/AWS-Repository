@@ -1,7 +1,7 @@
  # Virtual Private Cloud(VPC)
  - It is an isolated network used for securely hosting your applications. Applications deployed in the VPC cannot
    be accessible to the internet. 
- - We can customize the level of isolation we want in the VPC with the help of VPC components like Subnets, ACLs which will be 
+ - We can customize the level of isolation we want with the help of VPC components like Subnets, ACLs which will be 
    touched upon later.
  - For creating a VPC in AWS, you need to provide your CIDR block. For example, if you choose 10.0.0.0/24,  it allocates 
    256 IP address for our usage, which is derived from the below formula.
