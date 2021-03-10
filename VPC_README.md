@@ -25,6 +25,9 @@
         since 0 to 63 are used by subnet1.                       
    ```
   ### Subnets 
+    <div align="left">
+      <img src="/VPC.JPG"></img>
+ </div>
  - The idea of dividing the VPC into subnets is to group them into public and private subnets and route the traffic to them accordingly.
  - Private subnets does not allow public traffic. But, they should access the resources in the internet using NAT gateway. 
    Nat gateway allows only one way communication, resources in private subnet can access public resources, but not vice versa. 
@@ -38,7 +41,9 @@
  - For applications which require internet facing, we will use public subnets while creating resources like EC2 web applications, application 
    load balancers, etc.,
  - Subnets can be created across zones in the region where VPC was created.
-
+ <div align="left">
+      <img src="/VPC1.PNG"></img>
+ </div>
  ###ACL (Access control lists)
 - It sits between routes and subnets and controls what comes in and out of the subnets. 
 - Custom rule names has a naming convention, they start with rule name 100, when we add another rule, it has to be given 200(incremented by 100).
@@ -46,6 +51,5 @@
 - The incoming traffic goes through these set of rules, if any of the rule is satisfied, it will be either permitted or denied based on the rule
    which it was evaluated against. If none of the rule gets evaluated, the traffic will not be permitted into subnet.
   <div align="left">
-    <img src="/VPC1.PNG"></img>
-    <img src="/VPC2.PNG"></img>
-</div>
+      <img src="/VPC2.PNG"></img>
+ </div>
