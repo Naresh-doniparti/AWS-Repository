@@ -1,5 +1,5 @@
  # Virtual Private Cloud(VPC)
- - It is an isolated network used for hosting your applications, databases, etc., Applications deployed in the VPC cannot
+ - It is an isolated network used for hosting your applications. Applications deployed in the VPC cannot
    be accessible to the internet. 
  - We can customize the level of isolation we want in the VPC with the help of VPC components like Subnets, ACLs which will be 
    touched upon later.
