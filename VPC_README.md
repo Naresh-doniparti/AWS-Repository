@@ -30,7 +30,7 @@
   -   Public subnets allow public traffic. They use internet gateway for this.
 
 ## Routing tables
- - Routing to subnets is done with the help of routing tables. In the routing tables, we will be specifying what is the inbound and outbound traffic and what are the subnets associated to the route table. You can associate multiple subnets to the routing table. 
+ - Routing to subnets is done with the help of routing tables. In the routing tables, we will be specifying what is the inbound and outbound traffic and what are the subnets associated. You can associate multiple subnets to a routing table. 
    - For public subnets, we will be creating a public route table and add Internet gateway as one of the routes and associate all the public subnets to this route table.
    - For private subnets, we will be creating a private route table and add NAT gateway as one of the routes and associate all the private subnets to this route table.      
  - Since, private subnets has one way communication, they are not exposed to internet, we can use them while creating EC2 instances for databases, server applications.
