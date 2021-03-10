@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="sprinboot-dynamodb-child" target="1.8" />
+      <module name="springboot-dynamodb" target="1.8" />
+      <module name="springboot-feign" target="1.8" />
+      <module name="springboot-feign.main" target="1.8" />
+      <module name="springboot-feign.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="sprinboot-dynamodb-child" options="-parameters" />
+      <module name="spring-dynamodb" options="-parameters" />
+      <module name="springboot-dynamodb" options="-parameters" />
+    </option>
+  </component>
+</project>

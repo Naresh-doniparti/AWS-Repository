@@ -1,0 +1,17 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          default-label: aws
+          uri: https://github.com/Naresh-doniparti/config-repo.git
+          skip-ssl-validation: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh

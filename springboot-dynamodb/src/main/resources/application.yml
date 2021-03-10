@@ -1,0 +1,9 @@
+server:
+  port: 80
+aws:
+  dynamodb:
+    auth:
+      secret-key: UeLmsSa7h0EJ47rg4rqR3QinOt15gZbA8unOBWzb
+      access-key: AKIAWJCHZVHNDI6BYN6K
+    url: dynamodb.ap-south-1.amazonaws.com
+  region: ap-south-1
