@@ -1,4 +1,4 @@
- ## Virtual Private Cloud(VPC)
+ # Virtual Private Cloud(VPC)
  - It is an isolated network used for hosting your applications, databases, etc., Applications deployed in the VPC cannot
    be accessible to the internet. 
  - We can customize the level of isolation we want in the VPC with the help of VPC components like Subnets, ACLs which will be 
@@ -24,8 +24,7 @@
         Subnet 2 block has also the same block size as subnet1's, starts from 10.0.0.64 and stops at 10.0.0.127, 
         since 0 to 63 are used by subnet1.                       
    ```
-  ### Subnets 
-
+  ## Subnets 
    <div align="left">
       <img src="/VPC.jpg"></img>
    </div> 
@@ -43,7 +42,7 @@
    load balancers, etc.,
  - Subnets can be created across zones in the region where VPC was created.
  
- ###ACL (Access control lists)
+ ##ACL (Access control lists)
 - It sits between routes and subnets and controls what comes in and out of the subnets. 
 - Custom rule names has a naming convention, they start with rule name 100, when we add another rule, it has to be given 200(incremented by 100).
 - In each rule we will specify what traffic is allowed or denied.
@@ -53,7 +52,7 @@
       <img src="/VPC2.PNG"></img>
  </div>
 
-### Bigger Picture
+# Bigger Picture
   <div align="left">
-      <img src="/VPC1.JPG"></img>
+      <img src="/VPC1.PNG"></img>
  </div>
