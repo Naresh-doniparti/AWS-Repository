@@ -39,7 +39,8 @@
  
  ## ACL (Access control lists)
 - ACL sits between routes and subnets and controls what comes in and out of the subnets. 
-- Custom rule names has a naming convention, they start with the rule name 100 as default, when we add another rule, it has to be given 200(incremented by 100). In each rule we will specify what traffic is allowed or denied.
+- We can create custom rules to give additional protection to our subnets.
+- Custom rule names has a naming convention, they start with the rule name 100 as default, when we add another rule, the name has to be given 200(incremented by 100). In each rule we will specify what traffic is allowed or denied.
 - The routed traffic goes through these set of rules before hitting your subnets, If any of the rule is satisfied, it permits the traffic to your subnet. Otherwise, it denies.
   <div align="left">
       <img src="/VPC2.PNG"></img>
