@@ -25,16 +25,16 @@
       <img src="/VPC.png"></img>
    </div> 
 
-  - The idea of dividing the VPC into subnets is to group them into public and private subnets and route the traffic to them accordingly. This is first level of protection for your VPC.
-  -  Private subnets does not allow public traffic. But, they can access the resources in the internet or other AWS resources in the same VPC. It uses NAT gateway for this. Nat gateway allows only one way communication.
-  -   Public subnets allow public traffic. They use internet gateway for this.
+  - The idea of dividing the VPC into subnets is to group them into public and private subnets and route the traffic to them accordingly. 
+  - Private subnets does not allow public traffic. But, they can access the resources in the internet or other AWS resources in the same VPC. It uses NAT gateway for this. Nat gateway allows only one way communication.
+  - Public subnets allow public traffic. They use internet gateway for this.
 
 ## Routing tables
  <div align="left">
       <img src="/ROUTETABLE.png"></img>
    </div> 
 
- - Routing the traffic to subnets is done with the help of routing tables. It controls the that goes into the subnets. 
+ - Routing the traffic to subnets is done with the help of routing tables. It controls what goes in and out of the subnets. It gives the first level of protection for your VPC.
  -  In the routing tables, we will be specifying what is the inbound and outbound traffic and what are the subnets associated. You can associate multiple subnets to a routing table. 
    - For public subnets, we will be creating a public route table and add Internet gateway as one of the routes and associate all the public subnets to this route table. Adding internet gateway to the routes makes public subnets accessible to the external world. 
    - For private subnets, we will be creating a private route table and add NAT gateway as one of the routes and associate all the private subnets to this route table.      
