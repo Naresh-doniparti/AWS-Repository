@@ -34,15 +34,17 @@
       <img src="/ROUTETABLE.png"></img>
    </div> 
 
- - Routing the traffic to subnets is done with the help of routing tables. In the routing tables, we will be specifying what is the inbound and outbound traffic and what are the subnets associated. You can associate multiple subnets to a routing table. 
+ - Routing the traffic to subnets is done with the help of routing tables. It controls the that goes into the subnets. 
+ -  In the routing tables, we will be specifying what is the inbound and outbound traffic and what are the subnets associated. You can associate multiple subnets to a routing table. 
    - For public subnets, we will be creating a public route table and add Internet gateway as one of the routes and associate all the public subnets to this route table. Adding internet gateway to the routes makes public subnets accessible to the external world. 
    - For private subnets, we will be creating a private route table and add NAT gateway as one of the routes and associate all the private subnets to this route table.      
  - Since, private subnets has one way communication, they are not exposed to internet, we can use them while creating EC2 instances for databases, server applications.
  - For applications which require internet facing, we will use public subnets while creating EC2 instance like web applications, application load balancers, etc.,
-  - Subnets can be created across zones in the region where VPC was created for higher availability.  
+ - Subnets can be created across zones in the region where VPC was created for higher availability.  
+ - Communication between applications deployed in private subnets and the applications deployed in public subnets happens through security group configuration which is out of the scope of VPC. They are configured at EC2 instance level. 
  
  ## ACL (Access control lists)
-- ACL sits between routes and subnets in your VPC and controls what comes in and out of the subnets. 
+- ACL sits between routes and subnets in your VPC and acts as another layer of protection to your subnets. 
 - We can create custom rules to give additional protection to our subnets.
 - Custom rule names has a naming convention, they start with the rule name 100 as default, when we add another rule, the name has to be given 200(incremented by 100). In each rule we will specify what traffic is allowed or denied.
 - The routed traffic goes through these set of rules before hitting your subnets, If any of the rule is satisfied, it permits the traffic to your subnet. Otherwise, it denies.
@@ -53,7 +55,7 @@
 
 ## Bigger Picture
 
-#### At a high level, Routing tables and ACL helps what comes in and goes out of the subnet, it essentialy protects your subnets from being accessed by an unknown resources. EC2 instances deployed in the subnets uses security groups as an another layer of protection.
+#### At a high level, Routing tables and ACL helps in protecting what comes in and goes out of the subnet, it essentialy protects your subnets from being accessed by an unknown resources. EC2 instances deployed in the subnets uses security groups as an another layer of protection.
   <div align="left">
       <img src="/VPC1.PNG"></img>
  </div>
