@@ -1,4 +1,4 @@
-
+# ECS (Elastic Container Service)
 - [X] What is ECS?
   - It is a control plane which manages creation, monitoring & scaling of containers.
   - It has a group of components, namely tasks, services, clusters responsible for running multiple containers of desired capacity reliably.
