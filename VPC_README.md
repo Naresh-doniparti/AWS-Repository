@@ -16,9 +16,7 @@
             10.0.0.128/26  - subnet3
             10.0.0.192/26  - subnet4
         To give a quick explanation of the subnet partition,
-        Subnet 1 block is represented as 10.0.0.0/26, which has 64 IP addresees, starting from 10.0.0.0 to 10.0.0.63
-        Subnet 2 block has also the same block size as subnet1's, starts from 10.0.0.64 and stops at 10.0.0.127, 
-        since 0 to 63 are used by subnet1.                       
+        Subnet 1 block is represented as 10.0.0.0/26, which has 64 IP addresees, starting from 10.0.0.0 to 10.0.0.63. Subnet 2 block has also the same block size as subnet1's, starts from 10.0.0.64 and stops at 10.0.0.127, since 0 to 63 are used by subnet1.                       
    ```
   ## Subnets
  <div align="left">
