@@ -6,7 +6,7 @@
        2^(32-block size) = No. of IP addresses 
        2^(32-24) = 2 ^ 8 = 256 IP addresses (Out of 256, some 4/5 IP addresses is used by AWS for internal purposes)
    ``` 
- - Let's consider, we have created a VPC, and we are allotted with 256 IP addresses, we can divide the 256 IPs into sub-networks(subnets) with equal partitions. Next point covers what is the need of dividing them into subnets.
+ - Let's consider, we have created a VPC, and we are allotted with 256 IP addresses, we can divide the 256 IPs into sub-networks(subnets) with equal partitions. Next point covers what is the need of dividing them into subnets. But, lets see how these IP addresses can be divided.
    - 10.0.0.0/24 can be divided into any no. of partitions we want. Let's consider we want to divide it into 4 partitions.
    - By applying the same formula we have used above, we can divide our VPC into 4 sub-networks of 64 block size
     ```
