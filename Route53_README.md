@@ -1,1 +1,7 @@
-
+- What is DNS?
+- Domain creation or domain transfer?
+- What is a hosted zone? 
+- Creating private hosted zone?
+- What are A, NS records?
+- What are CNAME, ALIAS records?
+- Can we do load balancing? What type of load balancing can be done in Route 53?
