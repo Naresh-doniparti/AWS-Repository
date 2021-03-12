@@ -7,11 +7,11 @@
   - Task definition in ECS is where you define your container. Basically, you define all your container specifications like image name, container port, 
     env variables, volumes, etc., Docker images used in the task definition can be downloaded from either docker hub or AWS ECR(Elastic container registry).
     
--[X] How do you run your container?
+- [X] How do you run your container?
  - You attach an ECS service to your task definition and mention how many instances of your container to run. It is the service responsibility to maintain
    the desired no. of instances 24X7. You can use the same service to run multiple task definitions(docker containers).
 
--[X] Where do you host your containers?
+- [X] Where do you host your containers?
   - <span style="color:green"> ECS cluster is where you run your containers. It is a group of EC2 machines which are dedicated to run docker containers.
     It takes the task definitions(container creation requests) and distributes them equally b/w the nodes in the cluster.</span>
   - They can be located in multiple Availability zones of a region for distributing your containers across multiple zones for higher availability and fault tolerance.
