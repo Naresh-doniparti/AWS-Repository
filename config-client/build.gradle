@@ -7,29 +7,26 @@ plugins {
 group = 'com.microservices.aws'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
-
+ext {
+	set('springCloudVersion', "Hoxton.SR10")
+}
 repositories {
 	mavenCentral()
 }
 
-ext {
-	set('springCloudVersion', "Hoxton.SR10")
-}
-
 dependencies {
-	implementation 'org.springframework.cloud:spring-cloud-config-server'
-	implementation 'org.springframework.boot:spring-boot-starter-actuator:2.4.2'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.cloud:spring-cloud-starter-config'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
 }
-
 dependencyManagement {
 	imports {
 		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
 	}
 }
-
 test {
 	useJUnitPlatform()
 }

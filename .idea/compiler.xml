@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="microservicesgateway" target="1.8" />
       <module name="sprinboot-dynamodb-child" target="1.8" />
       <module name="springboot-dynamodb" target="1.8" />
       <module name="springboot-feign" target="1.8" />

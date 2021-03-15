@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    config:
+      uri: http://api.services.com/configServer
+  application:
+    name: config-client

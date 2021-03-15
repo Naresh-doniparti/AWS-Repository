@@ -5,6 +5,15 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/config-client" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/config-client" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/config-server" />
         <option name="modules">
           <set>
@@ -14,10 +23,10 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/springboot-feign" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/microservicesgateway" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/springboot-feign" />
+            <option value="$PROJECT_DIR$/microservicesgateway" />
           </set>
         </option>
       </GradleProjectSettings>

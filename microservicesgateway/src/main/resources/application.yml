@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: gatewayAndRegistry
+server:
+  port: 8888
+eureka:
+  client:
+    region: ap-south-1
+    eureka-server-d-n-s-name: gateway.naresh.com
+    use-dns-for-fetching-service-urls: true
+    register-with-eureka: false
+    fetch-registry: false

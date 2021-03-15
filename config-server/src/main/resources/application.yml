@@ -1,5 +1,7 @@
 server:
-  port: 8888
+  servlet:
+    context-path: /configServer
+  port: 9000
 spring:
   application:
     name: config-server
@@ -12,6 +14,8 @@ spring:
           skip-ssl-validation: true
 management:
   endpoints:
+    health:
+      show-details: always
     web:
       exposure:
         include: refresh

@@ -17,6 +17,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\Route53_README.md">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\microservicesgateway\src\main\java\com\microservices\aws\GatewayAndRegistryApplication.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\springboot-dynamodb\src\main\java\com\microservices\MicroservicesAwsBootcampApplication.java">
           <value>
             <Attribute>
