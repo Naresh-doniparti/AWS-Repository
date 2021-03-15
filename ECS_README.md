@@ -25,5 +25,5 @@
 
 - [X] How to scale your containers automatically?    
 * You can define autoscaling while creating the servive or it can be updated later in the service definition. 
-* You can configure this by setting alarms for memory, CPU consumption or any application metric of your application in the AWS Cloud Watch. It use a scaling policy to scale out or scale in no. of instances based on the application state. Scaling policy is where you define how you want the scaling to happen. There are default autoscaling options available. But, you can configure a new one.
-* 
+* You can configure this by setting alarms for memory, CPU consumption or any application metric of your application in the AWS Cloud Watch. Autoscaling gets triggered whenever there is an alarm breach. Autoscaling uses a scaling policy to scale out or scale in no. of instances .Scaling policy is where you define how you want the scaling to happen. There are default autoscaling options available. But, you can configure a new one.
+
