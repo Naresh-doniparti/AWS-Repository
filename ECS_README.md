@@ -2,8 +2,8 @@
 ## Basic questions
 
 - [X] What is ECS?
- - It is a control plane which manages creation, monitoring & scaling of containers.
- - It has a group of components, namely tasks, services, clusters responsible for running multiple containers of desired capacity reliably.
+ * It is a control plane which manages creation, monitoring & scaling of containers.
+ * It has a group of components, namely tasks, services, clusters responsible for running multiple containers of desired capacity reliably.
     
 - [X] How do you define a container in ECS?
  - Task definition in ECS is where you define your container. Basically, you define all your container specifications like image name, container port, env variables, volumes, etc., Docker images used in the task definition can be downloaded from either docker hub or AWS ECR(Elastic container registry).
@@ -22,3 +22,5 @@
 - [X] How to scale your cluster when the no. of containers grow?    
 - If you use Fargate, it does most of the heavy lifting. You don't have to bother about your cluster infrastructure. For EC2 type cluster, you have to define cloud watch rules to auto scale to your instances.
 - Suppose when an EC2 instances in your cluster is running out of resources due to over CPU consumption, over memory consumption. ECS can add a new EC2 instance to the cluster to take up the new load. We can also define custom rules for auto scaling. An example of such custom rule is no. of instances to be run on a single instance in the cluster.  
+
+- [X] How to scale your cluster when the no. of containers grow?    
